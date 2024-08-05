@@ -1,0 +1,94 @@
+@media screen and (max-width: 1100px) {
+  .left {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -120%;
+    transition: all 0.4s ease-in-out;
+    width: 60vw;
+  }
+  .leftimg,
+  .rightimg {
+    display: none;
+  }
+  .nav .hamburg {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  .closeimg {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  .right {
+    width: 100%;
+    margin: 0px;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .home {
+    height: 20%;
+  }
+  .library {
+    height: 62%;
+  }
+  .footer {
+    height: 15%;
+  }
+  .warning{
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    padding:5vw;
+    border-radius: 2vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s ease-out;
+    display: none;
+  }
+  
+  .warning h3{
+    text-align: center;
+    font-size: 5vw;
+  }
+  .warning h5{
+    font-size: 2vw;
+    text-align: center;
+    margin: 5vw 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .left {
+    width: 90vw;
+  }
+  .play-bar {
+    padding: 1rem;
+    gap: 16px;
+  }
+  .play-bar-buttons {
+    gap: 10px;
+  }
+  .song-info {
+    font-size: 0.6rem;
+    width: 150px;
+  }
+  .song-timer {
+    font-size: 0.6rem;
+  }
+  .spotify-playlists > h2 {
+    font-size: 2rem;
+  }
+  .spotify-playlists p {
+    font-size: 1rem;
+  }
+  .card-container {
+    justify-content: center;
+    max-height: 65vh;
+  }
+  .card-container .card {
+    width: 85%;
+  }
+}

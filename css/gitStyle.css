@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  padding: 5vh 10vh;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+.info {
+  padding: 2rem;
+  word-break: break-all;
+}
+.info h1 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.info h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.info p {
+  padding: 0 4rem 0 0;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+button {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 1vw;
+  border-radius: 2vw;
+  transition: all 0.2s ease-out;
+}
+button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid white;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 40%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Media */
+@media screen and (max-width: 1100px) {
+  .main {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .info {
+    padding: 1rem;
+    word-break: keep-all;
+  }
+  .info h1 {
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+  }
+  .info h4 {
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+  }
+  .info p {
+    padding: 0 2rem 0 0;
+    line-height: 1rem;
+    margin: 0.8rem 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: row;
+    padding: 0;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  button {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 1.5vw;
+    border-radius: 2vw;
+  }
+}
